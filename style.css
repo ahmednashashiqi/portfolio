@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: #ffffff;
+  color: #263238;
+  line-height: 1.65;
+}
+
+.page {
+  min-height: 100vh;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 70px 35px;
+  display: grid;
+  grid-template-columns: 38% 62%;
+  gap: 50px;
+}
+
+.sidebar {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-card {
+  text-align: center;
+}
+
+.profile-img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 25px;
+}
+
+.name {
+  color: #2497d3;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.email {
+  font-family: monospace;
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+}
+
+.socials a {
+  color: #2497d3;
+  font-size: 25px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.socials a:hover {
+  color: #1473a5;
+  transform: translateY(-3px);
+}
+
+.content {
+  max-width: 700px;
+  padding-top: 10px;
+}
+
+section {
+  margin-bottom: 34px;
+}
+
+h2 {
+  color: #2497d3;
+  font-size: 27px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+strong {
+  color: #111;
+  font-weight: 700;
+}
+
+a {
+  color: #2497d3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.item {
+  margin-bottom: 23px;
+}
+
+.item-title {
+  color: #111;
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.item-meta {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.projects p,
+.skills p {
+  margin-bottom: 8px;
+}
+
+.cert-list {
+  padding-left: 24px;
+  font-size: 18px;
+}
+
+.cert-list li {
+  margin-bottom: 4px;
+}
+
+.translate-btn {
+  position: fixed;
+  right: 35px;
+  top: 50%;
+  width: 55px;
+  height: 55px;
+  border: 2px solid #2497d3;
+  border-radius: 50%;
+  background: #fff;
+  color: #2497d3;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+@media (max-width: 850px) {
+  .page {
+    grid-template-columns: 1fr;
+    padding: 40px 22px;
+    gap: 25px;
+  }
+
+  .sidebar {
+    height: auto;
+    position: relative;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  .name {
+    font-size: 28px;
+  }
+
+  p,
+  .item-meta,
+  .cert-list {
+    font-size: 16px;
+  }
+
+  .translate-btn {
+    top: auto;
+    right: 20px;
+    bottom: 25px;
+  }
+}
