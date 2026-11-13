@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400..700&family=Manrope:wght@500..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css?v=6">
+  <link rel="stylesheet" href="../style.css?v=7">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -22,7 +22,7 @@
       <a href="../#experience">Experience</a>
       <a href="../#contact">Contact</a>
     </nav>
-    <a class="button button-outline header-cv" href="../Ahmed_Nashashiqi_CV.pdf?v=3" download="Ahmed_Nashashiqi.1_CV.pdf">Download CV <span aria-hidden="true">↓</span></a>
+    <a class="button button-outline header-cv" href="../Ahmed_Nashashiqi_CV.pdf?v=4" download="Ahmed_Nashashiqi.1_CV.pdf">Download CV <span aria-hidden="true">↓</span></a>
   </header>
   <main id="main" class="case-main wrap">
     <a class="text-link case-back" href="../#projects"><span aria-hidden="true">←</span> All projects</a>
@@ -30,6 +30,7 @@
       <p class="project-type">Enterprise software · Financial Systems Internship</p>
       <h1>Asaqefah ERP</h1>
       <p class="case-intro">An ERP system built to connect daily operations and automate financial processes at Asaqefah Entrepreneurship Company.</p>
+      <div class="case-actions"><a class="button button-outline" href="#sales-demo">Watch the sales workflow <span aria-hidden="true">↓</span></a></div>
     </header>
     <dl class="case-meta">
       <div><dt>Role</dt><dd>Financial Systems Intern</dd></div>
@@ -43,6 +44,19 @@
       <div><dt>Financial and operational reports</dt><dd>19+</dd></div>
       <div><dt>Automated tests run</dt><dd>213</dd></div>
     </dl>
+    <section id="sales-demo" class="case-demo" aria-labelledby="sales-demo-heading">
+      <h2 id="sales-demo-heading">From sales invoice to trial balance</h2>
+      <p>A 23-second walkthrough based on an ERP test run with sample data.</p>
+      <video controls playsinline preload="none" width="1280" height="720" poster="../erp-demo-poster.webp" aria-labelledby="sales-demo-heading">
+        <source src="../erp-sales-demo.mp4" type="video/mp4">
+        <a href="../erp-sales-demo.mp4">Download the walkthrough</a>
+      </video>
+      <ol>
+        <li>Post a SAR 200 invoice for two desk lamps.</li>
+        <li>Verify that stock drops from 10 to 8 units.</li>
+        <li>Check the trial balance. Debits and credits each total SAR 280, including the inventory cost.</li>
+      </ol>
+    </section>
     <div class="case-content">
       <section>
         <h2>What I built</h2>

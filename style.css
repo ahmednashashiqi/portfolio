@@ -37,6 +37,7 @@ nav a:hover, .text-link:hover { text-decoration: underline; }
 .eyebrow, .project-type, .role-date { font-size: .84rem; font-weight: 700; color: var(--muted); }
 .eyebrow span { margin-inline: .25rem; color: #486583; }
 .hero h1 { font-size: clamp(2.4rem, 5.5vw, 4.6rem); margin-block: .65rem .9rem; font-weight: 800; line-height: 1.06; letter-spacing: -.05em; }
+.hero-role { color: var(--forest); font-size: clamp(1rem, 2vw, 1.3rem); font-weight: 750; margin-bottom: .55rem; }
 .hero-summary { color: var(--muted); font-size: clamp(1rem, 1.6vw, 1.12rem); max-width: 32rem; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.65rem; }
 .portrait { background: var(--surface); border: 1px solid var(--line); border-radius: 15px; padding: .45rem; width: min(100%, 295px); justify-self: end; box-shadow: 0 12px 30px #23395510; }
@@ -57,6 +58,8 @@ nav a:hover, .text-link:hover { text-decoration: underline; }
 .project-copy > p:not(.project-type), .section-summary, dd, .credentials p { color: var(--muted); }
 .contribution { padding-left: .85rem; border-left: 2px solid #a4bdd5; }
 .contribution strong { display: block; color: var(--ink); }
+.project-copy .project-result { color: var(--forest); font-weight: 600; }
+.project-result strong { margin-right: .2rem; font-size: 1.35em; }
 .project-secondary { display: flex; flex-direction: column; }
 .project-secondary .project-copy { flex: 1; justify-content: flex-start; }
 .project-links { display: flex; flex-wrap: wrap; gap: .45rem 1.2rem; }
@@ -69,11 +72,7 @@ nav a:hover, .text-link:hover { text-decoration: underline; }
 .project-metrics div { display: flex; flex-direction: column; gap: .2rem; padding: .65rem .75rem; border-top: 1px solid #c2cedd; }
 .project-metrics dt { font-size: .78rem; color: #435a73; }
 .project-metrics dd { order: -1; font: 750 clamp(1.6rem, 4vw, 2.8rem)/1 var(--display); color: var(--forest); }
-.mri .project-metrics { width: 100%; margin-top: .25rem; }
-.mri .project-metrics dd { font-size: clamp(1.3rem, 2.7vw, 2rem); }
 .project-metrics .metric-primary { background: #edf4fb; border-top-color: #8caccc; }
-.mri .project-metrics .metric-primary dd { font-size: clamp(1.55rem, 3.4vw, 2.45rem); }
-.evaluation-note { font-size: .86rem; }
 details { width: 100%; border-top: 1px solid #dce3eb; padding-top: .65rem; }
 summary { cursor: pointer; font-weight: 700; }
 details p { padding-top: .55rem; font-size: .9rem; color: var(--muted); }
@@ -129,6 +128,12 @@ dt { font-weight: 700; }
 .case-art .browser-frame { width: min(100%, 800px); margin-inline: auto; }
 .case-metrics { margin-top: 1.2rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); }
 .case-metrics .metric-primary dd { font-size: clamp(1.9rem, 5vw, 3.15rem); }
+.case-demo { max-width: 800px; margin-top: 2rem; }
+.case-demo h2 { font-size: clamp(1.4rem, 3vw, 2rem); }
+.case-demo p, .case-demo ol { color: var(--muted); }
+.case-demo p { margin-block: .5rem .8rem; }
+.case-demo video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); }
+.case-demo ol { padding-left: 1.3rem; }
 .case-content { display: grid; gap: 1.4rem; max-width: 74ch; margin-top: 1.75rem; }
 .case-content h2 { font-size: clamp(1.35rem, 3vw, 1.85rem); margin-bottom: .45rem; }
 .case-content p, .case-content li { color: var(--muted); }
