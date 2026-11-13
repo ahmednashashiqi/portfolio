@@ -110,6 +110,9 @@ dt { font-weight: 700; }
 .contact { background: var(--forest); color: #f5f8fc; }
 .contact-layout { display: flex; justify-content: space-between; gap: 1.6rem; padding-block: clamp(2.8rem, 6vw, 5rem); }
 .contact p { color: #dce7f5; margin: .62rem 0 .8rem; }
+.contact-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .65rem 1rem; }
+.whatsapp-button { background: #e0f5e8; color: #16482e; border-color: transparent; }
+.whatsapp-button:hover { background: #c6ecd5; }
 .contact .email { color: var(--accent); overflow-wrap: anywhere; }
 .contact-links { display: grid; grid-template-columns: repeat(2, auto); align-content: center; gap: .65rem 1.2rem; font-weight: 600; }
 .contact a:focus-visible { outline-color: var(--accent); }
