@@ -11,12 +11,12 @@
   <meta property="og:description" content="Software development, ERP systems, and applied machine learning. Based in Riyadh, Saudi Arabia.">
   <meta property="og:url" content="https://ahmednashashiqi.com/">
   <meta property="og:image" content="https://ahmednashashiqi.com/profile.png">
-  <meta name="theme-color" content="#f7f4ec">
+  <meta name="theme-color" content="#f8f9fb">
   <link rel="icon" href="profile.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=DM+Sans:wght@400..700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=3">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400..700&family=Manrope:wght@500..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -36,7 +36,7 @@
       <section id="about" class="hero wrap" aria-labelledby="name">
         <div class="hero-copy">
           <p class="eyebrow">Software Developer <span aria-hidden="true">·</span> Riyadh, Saudi Arabia</p>
-          <h1 id="name">Ahmed<br>Nashashiqi<span>.</span></h1>
+          <h1 id="name">Ahmed Nashashiqi</h1>
           <p class="hero-summary">Computer Science graduate and Hayyiz co-founder. I build web and mobile products, from REST APIs and ERP workflows to applications that use machine learning.</p>
           <div class="hero-actions">
             <a class="button button-accent" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
@@ -84,7 +84,7 @@
           </div>
           <div class="erp-visual">
             <img src="erp-cover.webp" alt="Asaqefah ERP project visual showing dashboards on desktop and tablet" width="1008" height="566" loading="lazy">
-            <dl class="erp-metrics">
+            <dl class="project-metrics">
               <div><dt>Business modules</dt><dd>15+</dd></div>
               <div><dt>Business workflows</dt><dd>40+</dd></div>
               <div><dt>Operational &amp; financial reports</dt><dd>19+</dd></div>
@@ -109,21 +109,29 @@
             </div>
           </div>
         </article>
-        <article class="project project-secondary mri">
-          <div class="mri-art" aria-label="Model workflow">
-            <div class="mri-flow">
-              <span>MRI scan</span><span class="flow-arrow" aria-hidden="true">→</span>
-              <span>EfficientNet-B0</span><span class="flow-arrow" aria-hidden="true">→</span>
-              <span>Grad-CAM</span>
-            </div>
+        <article id="brain-mri" class="project project-secondary mri">
+          <div class="project-art mri-art">
+            <figure class="browser-frame">
+              <figcaption class="browser-bar"><span aria-hidden="true"></span>Brain MRI Analyzer</figcaption>
+              <div class="mri-screen">
+                <img src="mri-analyzer.webp" alt="Brain MRI Analyzer prototype showing the image upload panel and analysis options" width="1200" height="542" loading="lazy">
+              </div>
+            </figure>
           </div>
           <div class="project-copy">
             <p class="project-type">Applied ML · Graduation project</p>
             <h3>Brain MRI Classification</h3>
-            <p>A Flask research prototype that classifies brain MRI images with EfficientNet-B0 and highlights regions that influenced the prediction with Grad-CAM. A local language model adds contextual explanations.</p>
+            <p>A Flask research prototype that classifies brain MRI images into four categories using EfficientNet-B0. Grad-CAM highlights regions that influenced each prediction. A local vision-language model adds explanations using retrieval-augmented generation.</p>
             <ul class="tags" aria-label="MRI project technologies">
               <li>Python</li><li>PyTorch</li><li>Flask</li>
             </ul>
+            <dl class="project-metrics" aria-label="Research evaluation results">
+              <div><dt>Training accuracy</dt><dd>99.2%</dd></div>
+              <div><dt>External test accuracy</dt><dd>65.1%</dd></div>
+              <div><dt>External macro F1</dt><dd>0.5716</dd></div>
+              <div><dt>External weighted F1</dt><dd>0.5765</dd></div>
+            </dl>
+            <p class="evaluation-note">The external test used MRI images from different sources than the training data. The prototype is for research and education.</p>
             <a class="text-link" href="https://github.com/ahmednashashiqi/AI-system_for_brain_tumor_detection">View repository <span aria-hidden="true">↗</span></a>
           </div>
         </article>
@@ -207,7 +215,7 @@
     <section id="contact" class="contact" aria-labelledby="contact-heading">
       <div class="wrap contact-layout">
         <div>
-          <h2 id="contact-heading">Let’s talk.</h2>
+          <h2 id="contact-heading">Contact</h2>
           <p>I’m open to software engineering and technical roles in Saudi Arabia.</p>
           <a class="text-link email" href="mailto:ahmed.nashashiqi@gmail.com">ahmed.nashashiqi@gmail.com <span aria-hidden="true">↗</span></a>
         </div>
