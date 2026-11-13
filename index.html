@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400..700&family=Manrope:wght@500..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -55,7 +55,7 @@
         <a class="text-link" href="https://github.com/ahmednashashiqi">GitHub <span aria-hidden="true">↗</span></a>
       </div>
       <div class="project-grid">
-        <article class="project featured">
+        <article id="hayyiz" class="project featured">
           <div class="project-art">
             <figure class="browser-frame">
               <figcaption class="browser-bar"><span aria-hidden="true"></span>hayyizapp.com</figcaption>
@@ -65,15 +65,20 @@
           <div class="project-copy">
             <p class="project-type">Marketplace · Co-founder</p>
             <h3>Hayyiz</h3>
-            <p>A Saudi marketplace connecting people and businesses with available storage space. I helped build the web and mobile experience, including authentication, database integration, and workflows for owners and renters.</p>
-            <a class="text-link" href="https://hayyizapp.com/">Visit Hayyiz <span aria-hidden="true">↗</span></a>
+            <p>A Saudi marketplace connecting people and businesses with available storage space.</p>
+            <p class="contribution"><strong>My contribution</strong> I built web and mobile features for owners and renters, integrated authentication and application data, and deployed the website.</p>
+            <div class="project-links">
+              <a class="text-link" href="projects/hayyiz.html" aria-label="Read case study for Hayyiz">Read case study <span aria-hidden="true">→</span></a>
+              <a class="text-link" href="https://hayyizapp.com/">Visit Hayyiz <span aria-hidden="true">↗</span></a>
+            </div>
           </div>
         </article>
-        <article class="project erp">
+        <article id="erp" class="project erp">
           <div class="project-copy">
             <p class="project-type">Enterprise software · Asaqefah</p>
             <h3>ERP System Development</h3>
-            <p>Designed and developed an ERP system from the ground up at Asaqefah Entrepreneurship Company to streamline operations and automate financial workflows.</p>
+            <p>An ERP system for Asaqefah Entrepreneurship Company that connects accounting, sales, purchasing, inventory, and other daily operations.</p>
+            <p class="contribution"><strong>My contribution</strong> I developed features across 15+ modules, built financial and operational reports, and ran the automated tests during final validation.</p>
             <ul class="tags" aria-label="ERP technologies">
               <li>Django REST Framework</li><li>React</li><li>PostgreSQL</li>
             </ul>
@@ -81,6 +86,7 @@
               <summary>View system modules</summary>
               <p>Financial Accounting, General Ledger, Sales, Purchasing, Inventory Management, Point of Sale, Payroll, Fixed Assets, VAT, Expense Management, Customer &amp; Supplier Management, Cost Centers, and Multi-Branch Operations.</p>
             </details>
+            <a class="text-link" href="projects/asaqefah-erp.html" aria-label="Read case study for Asaqefah ERP">Read case study <span aria-hidden="true">→</span></a>
           </div>
           <div class="erp-visual">
             <img src="erp-cover.webp" alt="Asaqefah ERP project visual showing dashboards on desktop and tablet" width="1008" height="566" loading="lazy">
@@ -99,14 +105,18 @@
           <div class="project-copy">
             <p class="project-type">Mobile · IoT prototype</p>
             <h3>Wasel</h3>
-            <p>A safety prototype that connects an Expo app to an ESP32 GPS device for live location, geofencing, and SOS alerts. <a href="#awards">Second place at the Asaqefah Sandbox Hackathon.</a></p>
+            <p>A safety prototype that connects an Expo app to an ESP32 GPS device for live location, geofencing, and SOS alerts.</p>
             <ul class="tags" aria-label="Wasel technologies">
               <li>React Native</li><li>ESP32</li><li>ArcGIS</li>
             </ul>
             <div class="project-links">
-              <a class="text-link" href="https://github.com/ahmednashashiqi/Wasel">Project overview <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="projects/wasel.html" aria-label="Read case study for Wasel">Read case study <span aria-hidden="true">→</span></a>
               <a class="text-link" href="wasel-presentation.pptx" download>Download slides (PPTX) <span aria-hidden="true">↓</span></a>
             </div>
+            <figure id="awards" class="award-inline">
+              <a href="wasel-award.webp"><img src="wasel-award.webp" alt="Wasel’s second-place trophy, phone, and hardware prototype" width="509" height="677" loading="lazy"></a>
+              <figcaption><strong>2nd Place Winner</strong><span>Asaqefah Sandbox Hackathon</span></figcaption>
+            </figure>
           </div>
         </article>
         <article id="brain-mri" class="project project-secondary mri">
@@ -114,7 +124,7 @@
             <figure class="browser-frame">
               <figcaption class="browser-bar"><span aria-hidden="true"></span>Brain MRI Analyzer</figcaption>
               <div class="mri-screen">
-                <img src="mri-analyzer.webp" alt="Brain MRI Analyzer prototype showing the image upload panel and analysis options" width="1200" height="542" loading="lazy">
+                <img src="mri-history.webp" alt="Brain MRI Analyzer history showing two recorded meningioma predictions" width="1050" height="491" loading="lazy">
               </div>
             </figure>
           </div>
@@ -126,28 +136,18 @@
               <li>Python</li><li>PyTorch</li><li>Flask</li>
             </ul>
             <dl class="project-metrics" aria-label="Research evaluation results">
+              <div class="metric-primary"><dt>External test accuracy</dt><dd>65.1%</dd></div>
               <div><dt>Training accuracy</dt><dd>99.2%</dd></div>
-              <div><dt>External test accuracy</dt><dd>65.1%</dd></div>
               <div><dt>External macro F1</dt><dd>0.5716</dd></div>
               <div><dt>External weighted F1</dt><dd>0.5765</dd></div>
             </dl>
             <p class="evaluation-note">The external test used MRI images from different sources than the training data. The prototype is for research and education.</p>
-            <a class="text-link" href="https://github.com/ahmednashashiqi/AI-system_for_brain_tumor_detection">View repository <span aria-hidden="true">↗</span></a>
+            <div class="project-links">
+              <a class="text-link" href="projects/brain-mri.html" aria-label="Read case study for Brain MRI Classification">Read case study <span aria-hidden="true">→</span></a>
+              <a class="text-link" href="https://github.com/ahmednashashiqi/AI-system_for_brain_tumor_detection">View repository <span aria-hidden="true">↗</span></a>
+            </div>
           </div>
         </article>
-      </div>
-    </section>
-
-    <section id="awards" class="section wrap award" aria-labelledby="award-heading">
-      <figure class="award-photo">
-        <img src="wasel-award.webp" alt="Wasel's second-place trophy displayed beside the app and hardware prototype" width="509" height="677" loading="lazy">
-      </figure>
-      <div class="award-copy">
-        <p class="project-type">Award · Wasel</p>
-        <h2 id="award-heading">2nd Place Winner</h2>
-        <p class="award-event">Asaqefah Sandbox Hackathon</p>
-        <p>Our team presented Wasel, a safety prototype that pairs a mobile app with an ESP32-based GPS device to support live location, geofencing, and SOS alerts.</p>
-        <a class="text-link" href="#wasel">Explore the Wasel project <span aria-hidden="true">↗</span></a>
       </div>
     </section>
 
@@ -155,26 +155,41 @@
       <div class="wrap experience-layout">
         <div>
           <h2 id="experience-heading">Experience</h2>
-          <p class="section-summary">Product development, ERP systems, and hands-on IT support.</p>
+          <p class="section-summary">I co-founded Hayyiz and have one year and two months of combined experience in hospitality IT support and ERP training.</p>
         </div>
         <div class="timeline">
           <article class="role">
             <p class="role-date"><time datetime="2026-10">Oct 2026</time> – Present</p>
             <h3>Co-founder</h3>
             <p class="organization">Hayyiz</p>
-            <p>Developed web and mobile features with a four-person founding team, tested owner and renter workflows, and deployed the website with its domain and DNS configuration.</p>
+            <ul class="role-points">
+              <li>Co-founded a Saudi marketplace for renting storage space as part of a four-person founding team.</li>
+              <li>Built web and mobile features for owners and renters, including authentication, database integration, and user workflows.</li>
+              <li>Tested and debugged those workflows, helped prepare Android and iOS beta releases, and deployed the website on Saudi-hosted servers with its domain and DNS configuration.</li>
+              <li>Worked with the founding team on design, business planning, and partnerships with property owners.</li>
+            </ul>
+            <a class="text-link" href="projects/hayyiz.html">Hayyiz case study <span aria-hidden="true">→</span></a>
           </article>
           <article class="role">
             <p class="role-date"><time datetime="2026-06">Jun</time> – <time datetime="2026-07">Jul 2026</time></p>
             <h3>Financial Systems Intern</h3>
             <p class="organization">Asaqefah Company</p>
-            <p>Built Django and React features across 15+ ERP modules. Implemented 40+ business workflows and 19+ reports, then ran 213 automated tests during final validation.</p>
+            <ul class="role-points">
+              <li>Developed Django and React features across 15+ ERP modules, including accounting, sales, purchasing, inventory, POS, payroll, VAT, and fixed assets.</li>
+              <li>Worked with finance and management to gather requirements and improve 10+ key workflows. Implemented 40+ business workflows and 19+ financial and operational reports.</li>
+              <li>Ran 213 automated tests during final validation and helped debug, deploy, and demonstrate the system.</li>
+            </ul>
+            <a class="text-link" href="projects/asaqefah-erp.html">Asaqefah ERP case study <span aria-hidden="true">→</span></a>
           </article>
           <article class="role">
             <p class="role-date"><time datetime="2023-03">Mar 2023</time> – <time datetime="2024-02">Feb 2024</time></p>
             <h3>Computer Hardware Technician</h3>
             <p class="organization">Jawharet Al Daeri Serviced Apartments</p>
-            <p>Maintained 50+ computers and devices and supported more than 20 staff with Windows, hotel management software, peripherals, and day-to-day troubleshooting.</p>
+            <ul class="role-points">
+              <li>Installed, configured, and maintained 50+ computers and devices across hotel operations.</li>
+              <li>Set up Windows, hotel management software, and more than 10 types of peripherals, including printers, scanners, and network devices.</li>
+              <li>Resolved 100+ hardware and software issues and provided day-to-day support to more than 20 staff.</li>
+            </ul>
           </article>
         </div>
       </div>
@@ -197,7 +212,7 @@
           <a href="degree-certificate.webp">
             <img src="degree-certificate.webp" alt="Bachelor of Science in Computer Science certificate from the Islamic University of Madinah" width="967" height="681" loading="lazy">
           </a>
-          <figcaption><a class="text-link" href="degree-certificate.webp">View degree certificate <span aria-hidden="true">↗</span></a></figcaption>
+          <figcaption><a class="text-link" href="degree-certificate.webp">Open full-size degree certificate <span aria-hidden="true">↗</span></a></figcaption>
         </figure>
         <h3 class="cert-title">Certifications</h3>
         <ul class="cert-list">

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brain MRI Classification | Ahmed Nashashiqi</title>
+  <meta name="description" content="A research web application that classifies brain MRI images and shows which parts of the image influenced the prediction.">
+  <link rel="canonical" href="https://ahmednashashiqi.com/projects/brain-mri.html">
+  <meta name="theme-color" content="#f8f9fb">
+  <link rel="icon" href="../profile.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400..700&family=Manrope:wght@500..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css?v=6">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="../" aria-label="Ahmed Nashashiqi home"><span class="wordmark-symbol" aria-hidden="true">a.</span><span class="wordmark-name">Ahmed Nashashiqi</span></a>
+    <nav aria-label="Main navigation">
+      <a href="../#projects">Projects</a>
+      <a href="../#experience">Experience</a>
+      <a href="../#contact">Contact</a>
+    </nav>
+    <a class="button button-outline header-cv" href="../Ahmed_Nashashiqi_CV.pdf?v=3" download="Ahmed_Nashashiqi.1_CV.pdf">Download CV <span aria-hidden="true">↓</span></a>
+  </header>
+  <main id="main" class="case-main wrap">
+    <a class="text-link case-back" href="../#projects"><span aria-hidden="true">←</span> All projects</a>
+    <header class="case-heading">
+      <p class="project-type">Applied machine learning · Graduation project</p>
+      <h1>Brain MRI Classification</h1>
+      <p class="case-intro">A research web application that classifies brain MRI images and shows which parts of the image influenced the prediction.</p>
+      <div class="case-actions"><a class="button button-outline" href="https://github.com/ahmednashashiqi/AI-system_for_brain_tumor_detection">View repository <span aria-hidden="true">↗</span></a></div>
+    </header>
+    <dl class="case-meta">
+      <div><dt>Project</dt><dd>Computer Science graduation project</dd></div>
+      <div><dt>Period</dt><dd>Aug 2025–May 2026</dd></div>
+      <div><dt>Stack</dt><dd>Python, Flask, PyTorch, EfficientNet-B0</dd></div>
+    </dl>
+    <div class="project-art case-art">
+      <figure class="browser-frame">
+        <figcaption class="browser-bar"><span aria-hidden="true"></span>Brain MRI Analyzer · Analysis History</figcaption>
+        <img src="../mri-history.webp" alt="The project’s Analysis History interface showing recorded meningioma predictions" width="1050" height="491">
+      </figure>
+    </div>
+    <dl class="project-metrics case-metrics" aria-label="Research evaluation results">
+      <div class="metric-primary"><dt>External test accuracy</dt><dd>65.1%</dd></div>
+      <div><dt>Training accuracy</dt><dd>99.2%</dd></div>
+      <div><dt>External macro F1</dt><dd>0.5716</dd></div>
+      <div><dt>External weighted F1</dt><dd>0.5765</dd></div>
+    </dl>
+    <div class="case-content">
+      <section>
+        <h2>What I built</h2>
+        <p>I helped develop the Flask interface and the classification and explanation pipeline. EfficientNet-B0 predicts one of four classes: glioma, meningioma, pituitary tumor, or no tumor.</p>
+      </section>
+      <section>
+        <h2>How the system works</h2>
+        <ul>
+          <li>The Flask API preprocesses the image and sends it to the classifier.</li>
+          <li>Grad-CAM highlights regions that influenced the model’s prediction.</li>
+          <li>A local vision-language model uses retrieval-augmented generation to add explanations from a curated knowledge base.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>What the evaluation showed</h2>
+        <p>The report records 99.2% training accuracy and 65.1% accuracy on a separate external dataset. The difference shows that the model struggled with images from new sources. The project was developed for research and education.</p>
+      </section>
+
+      <figure class="case-evidence">
+        <a href="../mri-external-matrix.webp"><img src="../mri-external-matrix.webp" alt="Confusion matrix of model predictions on the external MRI test dataset" width="817" height="659" loading="lazy"></a>
+        <figcaption>External test set confusion matrix from the graduation report. <a href="../mri-external-matrix.webp">Open full size</a></figcaption>
+      </figure>
+      <figure class="case-evidence">
+        <img src="../mri-analyzer.webp" alt="MRI upload panel with options for retrieval and Grad-CAM reports" width="1200" height="542" loading="lazy">
+        <figcaption>The analysis interface includes options for retrieval and Grad-CAM reports.</figcaption>
+      </figure>
+    </div>
+    <nav class="case-next" aria-label="More projects">
+      <a class="text-link" href="../#projects"><span aria-hidden="true">←</span> All projects</a>
+      <a class="text-link" href="hayyiz.html">Hayyiz <span aria-hidden="true">→</span></a>
+    </nav>
+  </main>
+  <footer class="contact"><div class="wrap footer">© 2026 Ahmed Nashashiqi</div></footer>
+</body>
+</html>

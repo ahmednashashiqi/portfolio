@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wasel | Ahmed Nashashiqi</title>
+  <meta name="description" content="A safety prototype that connects a GPS wearable to a mobile app so caregivers and group leaders can monitor location and receive alerts.">
+  <link rel="canonical" href="https://ahmednashashiqi.com/projects/wasel.html">
+  <meta name="theme-color" content="#f8f9fb">
+  <link rel="icon" href="../profile.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400..700&family=Manrope:wght@500..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css?v=6">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="../" aria-label="Ahmed Nashashiqi home"><span class="wordmark-symbol" aria-hidden="true">a.</span><span class="wordmark-name">Ahmed Nashashiqi</span></a>
+    <nav aria-label="Main navigation">
+      <a href="../#projects">Projects</a>
+      <a href="../#experience">Experience</a>
+      <a href="../#contact">Contact</a>
+    </nav>
+    <a class="button button-outline header-cv" href="../Ahmed_Nashashiqi_CV.pdf?v=3" download="Ahmed_Nashashiqi.1_CV.pdf">Download CV <span aria-hidden="true">↓</span></a>
+  </header>
+  <main id="main" class="case-main wrap">
+    <a class="text-link case-back" href="../#projects"><span aria-hidden="true">←</span> All projects</a>
+    <header class="case-heading">
+      <p class="project-type">Mobile and IoT · Hackathon prototype</p>
+      <h1>Wasel</h1>
+      <p class="case-intro">A safety prototype that connects a GPS wearable to a mobile app so caregivers and group leaders can monitor location and receive alerts.</p>
+      <div class="case-actions"><a class="button button-outline" href="https://github.com/ahmednashashiqi/Wasel">Project on GitHub <span aria-hidden="true">↗</span></a>
+        <a class="button button-outline" href="../wasel-presentation.pptx" download>Download slides (PPTX) <span aria-hidden="true">↓</span></a></div>
+    </header>
+    <dl class="case-meta">
+      <div><dt>Project</dt><dd>Team hackathon prototype</dd></div>
+      <div><dt>Award</dt><dd>2nd place, Asaqefah Sandbox Hackathon</dd></div>
+      <div><dt>Stack</dt><dd>React Native, Expo, ESP32, ArcGIS</dd></div>
+    </dl>
+    <figure class="case-art"><img src="../wasel-cover.webp" alt="Wasel’s GPS wearable and Arabic mobile app" width="1014" height="569"></figure>
+    <div class="case-content">
+      <section>
+        <h2>The problem</h2>
+        <p>Caregivers and group leaders can lose track of a child, an older adult, or a visitor in crowded environments. Wasel explores how a wearable and a phone can make location and alerts easier to access.</p>
+      </section>
+      <section>
+        <h2>What I built</h2>
+        <ul>
+          <li>Integrated an Expo mobile app with an ESP32-based GPS device to show live location.</li>
+          <li>Implemented geofencing so the app could flag when the wearer left a designated area.</li>
+          <li>Added an SOS flow and integrated Esri and ArcGIS for mapping and geographic visualization.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>How the prototype works</h2>
+        <p>A caregiver pairs the wearable with the app, views the latest location on a map, and sets a safe area. The prototype surfaces an alert when the wearable leaves that area or the wearer triggers SOS.</p>
+      </section>
+      <section>
+        <h2>Hackathon result</h2>
+        <p>Our team placed second at the Asaqefah Sandbox Hackathon. The slides describe the prototype and concepts the team explored for future versions.</p>
+      </section>
+      <figure id="awards" class="award-inline case-award">
+        <a href="../wasel-award.webp"><img src="../wasel-award.webp" alt="Wasel’s second-place trophy beside the prototype" width="509" height="677" loading="lazy"></a>
+        <figcaption><strong>2nd Place Winner</strong><span>Asaqefah Sandbox Hackathon</span></figcaption>
+      </figure>
+
+    </div>
+    <nav class="case-next" aria-label="More projects">
+      <a class="text-link" href="../#projects"><span aria-hidden="true">←</span> All projects</a>
+      <a class="text-link" href="brain-mri.html">Brain MRI Classification <span aria-hidden="true">→</span></a>
+    </nav>
+  </main>
+  <footer class="contact"><div class="wrap footer">© 2026 Ahmed Nashashiqi</div></footer>
+</body>
+</html>
